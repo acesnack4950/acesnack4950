@@ -63,4 +63,11 @@
 ### ☕ Spring Boot Backend 実習
 > 授業で学んだSpring Boot 3によるREST API・JPA・テストコードの実習
 
--
+- **Tech**: Java, Spring Boot 3, JPA, H2, JUnit
+- **Repo**: [backend_program](https://github.com/acesnack4950/backend_program)
+
+---
+
+## 📈 Learning Log
+
+- [git-practice](https://github.com/acesnack4950/git-practice) — Git/GitHubの基本からブランチ・コンフリクト解決・Pull Requestまでの練習記録

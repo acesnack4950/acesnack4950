@@ -14,6 +14,8 @@
 
 - **2026 シニア認知機能向上ハッカソン 優秀賞** (2026.10, 株式会社AICU)<br>
   2026 시니어 인지기능 향상 해커톤 **우수상** — 「安心メッセージ探偵団」
+- **2026 AIM Challenge 本選 優秀賞** (2026.11)<br>
+  2026 AIM 챌린지 본선(9팀) **우수상** — 「LocalRise」
 
 ---
 
@@ -25,9 +27,10 @@
 | | Java | Spring Boot 授業実習 |
 | | Python, SQL | インターン・授業（Excel自動化） |
 | Frontend | React, Tailwind CSS, HTML/CSS | ハッカソン作品・ToDoアプリ |
-| Backend | Spring Boot 3, JPA, JUnit | 授業実習 |
+| Backend | FastAPI, Spring Boot 3, JPA, JUnit | AIM Challenge・授業実習 |
 | Mobile | Capacitor (Android) | ハッカソン作品 |
-| AI | ComfyUI, LoRA学習 (ai-toolkit) | AIM Challenge |
+| AI | OpenAI API, ComfyUI, Comfy Cloud, LoRA学習 (ai-toolkit) | AIM Challenge |
+| Automation | openpyxl (Excel自動化) | 授業（請求書発行の自動化） |
 | Tools | Git, GitHub, VS Code, IntelliJ | 全般 |
 
 ---
@@ -46,13 +49,25 @@
 - **Repo**: 受賞作の著作財産権は主催企業に帰属するため、ソースコードは非公開です<br>
   (수상작 저작재산권이 주최사에 귀속되어 소스코드는 비공개입니다)
 
-### 🗺 LocalRise — 2026 AIM Challenge 本選（進行中）
-> 地域（金海）観光地をAIで推薦し、ガイドキャラクターの映像を生成するサービス<br>
-> 지역(김해) 관광지 AI 추천 + 가이드 캐릭터 영상 생성 서비스
+### 🗺 LocalRise — 🏆 2026 AIM Challenge 本選 優秀賞
+> 「흩어진 데이터를 모아, 당신만의 여행을 완성하다」<br>
+> 質問7つに答えると、AIが金海（キメ）の観光地を5か所推薦し、ガイドキャラクターが旅する映像をリアルタイム生成<br>
+> 질문 7개에 답하면 AI가 김해 관광지 5곳을 추천하고, 가이드 캐릭터가 여행하는 영상을 실시간 생성
 
-- **担当**: チームリーダー / 推薦Agent・LoRA学習・画像・映像生成パイプライン
-- **Tech**: ComfyUI, LoRA (ai-toolkit), Comfy Cloud
-- **Status**: 2026年11月 本選に向けて開発中
+- **担当**: チームリーダー / 推薦API・キオスク画面・Comfy Cloud リアルタイム映像生成・観光地20か所の LoRA 学習
+- **成果**: 本選9チーム 優秀賞 / CO-SHOW 2026 で現場デモ
+- **ポイント**: 映像を約1分でリアルタイム生成 / 回答128通りで推薦の偏りを検証 / Issue・PR・Projects でチーム運営
+- **Tech**: Python, FastAPI, OpenAI API, ComfyUI, Comfy Cloud, LoRA (ai-toolkit)
+- **Repo**: [localrise](https://github.com/acesnack4950/localrise)
+
+### 🧾 請求書発行の自動化 / 고객별 청구서 발행 자동화
+> 担当者ごとの売上Excelを集計し、顧客別の請求書を自動発行する Python プログラム<br>
+> 담당자별 매출 엑셀을 모아 고객별 청구서를 자동 발행하는 파이썬 프로그램
+
+- **内容**: 売上の集約 → 顧客別集計 → 請求書発行 の3段階を自動化（授業実習）
+- **追加機能**: 請求サマリー表（金額順・合計・3万ウォン以上を黄色で強調）を自分で追加
+- **Tech**: Python, openpyxl, json
+- **Repo**: [invoice-automation](https://github.com/acesnack4950/invoice-automation)
 
 ### ✅ ToDo List App
 > タスクの追加・完了・編集・削除ができ、ブラウザを閉じてもデータが残るWebアプリ
